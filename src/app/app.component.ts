@@ -25,4 +25,7 @@ link.value='';
   console.log(`Adding Article Title: ${title.value} and adding Article Link: ${link.value}`);
   return false;
 }
+sortedArticle() : Article[]{
+  return this.articles.sort((a:Article, b:Article) => b.votes - a.votes);
+}
 }

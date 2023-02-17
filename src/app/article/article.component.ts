@@ -7,8 +7,8 @@ import { Article } from './article.model';
   styleUrls: ['./article.component.css']
 })
 export class ArticleComponent implements OnInit{
-
-@Input() article:Article;
+  @Input()
+  article!: Article;
 
   constructor() {
     //this.article= new Article("Angular", "https://angular.io, 10")
